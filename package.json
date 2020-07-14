@@ -1,0 +1,33 @@
+{
+  "name": "blog-crud",
+  "version": "1.0.0",
+  "description": "Um projeto para aprender CRUD com Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalessalazar/BLOG-CRUD.git"
+  },
+  "keywords": [
+    "blog",
+    "crud",
+    "nodejs"
+  ],
+  "author": "Thales Salazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thalessalazar/BLOG-CRUD/issues"
+  },
+  "homepage": "https://github.com/thalessalazar/BLOG-CRUD#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
+    "sequelize": "^6.3.0",
+    "slugify": "^1.4.4"
+  }
+}
