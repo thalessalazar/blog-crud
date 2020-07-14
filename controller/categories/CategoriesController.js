@@ -31,8 +31,31 @@ router.post('/categories/save', (req, res) => {
 //Read
 router.get('/admin/categories', (req, res) => {
     categoryModel.findAll().then(categories => {
-        res.render('admin/categories/', {categories: categories});
+        res.render('admin/categories/', { categories: categories });
     });
+});
+
+//Delete
+router.post('/categories/delete', (req, res) => {
+    let id = req.body.id;
+
+
+    if (id != undefined) {
+
+        if (!isNaN(id)) {
+            categoryModel.destroy({
+                where: {
+                    id: id
+                }
+            }).then(() => {
+                res.redirect('/admin/categories/');
+            });
+        } else {
+            res.redirect('/');
+        }
+    } else {
+        res.redirect('/');
+    }
 });
 
 module.exports = router;

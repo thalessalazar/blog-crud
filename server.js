@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const databaseConnection = require('./database/database');
 
-const categoriesController = require('./controller/categories/CategorieController');
+const categoriesController = require('./controller/categories/CategoriesController');
 const articlesController = require('./controller/articles/ArticlesController');
 
 const categoryModel = require('./model/CategoryModel');
